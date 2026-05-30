@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Poster</title>
+    <style>
+ .container
+ {
+    position: relative;
+    height: 1500px;
+    background-color: rgb(252, 249, 206);
+ }       
+.header
+{
+    height: 45px;
+    background-color: rgb(252, 253, 253);
+    border:2px solid black;
+
+}
+.logo
+{
+    position: absolute;
+    top: 1%;
+    left: 43%;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(93, 235, 93);
+}
+.banner
+{
+    position: absolute;
+    height: 300px;
+    width: 80%;
+    background-color: rgb(130, 248, 130);
+    top: 9%;
+    left: 10%;
+    border: 2px double rgb(59, 59, 59);
+    border-radius: 6%;
+    outline: 3px groove rgb(68, 68, 68);
+    box-shadow:  0px 0px 5px 5px rgb(34, 34, 34);
+    
+} 
+h1{
+    position: absolute;
+    left: 3%;
+    color: white;
+    font-family:cursive;
+}
+p
+{
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    color: white;
+    font-family:cursive ;
+    font-weight: bold;
+}
+#i1
+{
+    height: 250px;
+    width: 39%;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 58%;
+    top: 15%;
+    border-radius: 10%;
+    background-image: url("https://images.hindustantimes.com/tech/img/2024/09/02/1600x900/OPPO_teases_launch_of_new_K-series_smartphone_in_I_1721650161837_1725270782416.jpg");
+    background-size: cover;
+}
+.btn1
+{
+    height: 25px;
+    width: 78px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    border: 2px solid rgb(6, 95, 6);
+    border-radius: 10%;
+    padding: 3px;
+    text-align:center;
+    font-family:serif;
+    border-bottom-color: 5px rgb(98, 236, 34);
+    border-left-color:5px rgb(14, 218, 48);
+    border-top-color:5pxrgb(14, 218, 48) ;
+    border-right-color:5px rgb(14, 218, 48);
+}
+.btn2
+{
+    height: 25px;
+    width: 78px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    border: 2px solid rgb(6, 95, 6);
+    border-radius: 10%;
+    padding: 3px;
+    text-align:center;
+    font-family:serif;
+    border-bottom-color: 5px rgb(98, 236, 34);
+    border-left-color:5px rgb(14, 218, 48);
+    border-top-color:5pxrgb(14, 218, 48) ;
+    border-right-color:5px rgb(14, 218, 48);
+}
+.btn3
+{
+    height: 25px;
+    width: 90px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    border: 2px solid rgb(6, 95, 6);
+    border-radius: 10%;
+    padding: 3px;
+    text-align:center;
+    font-family:serif;
+    border-bottom-color: 5px rgb(98, 236, 34);
+    border-left-color:5px rgb(14, 218, 48);
+    border-top-color:5pxrgb(14, 218, 48) ;
+    border-right-color:5px rgb(14, 218, 48);
+}
+h2
+{
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    margin: 10px;
+    font-family: cursive;
+}
+.box
+{
+    height: 400px;
+    width: 900px;
+    background-color: rgb(253, 252, 250);
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    border-radius: 5%;
+    
+    box-shadow: 1px 2px 5px 5px rgb(61, 61, 61);
+}
+.square 
+{
+    
+    height: 290px;
+    width: 800px;
+    margin: 80px auto;
+    display:grid;
+    background-color: rgb(127, 240, 127);
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    column-gap: 3px;
+    border: 3px solid rgb(44, 44, 44);
+    border-radius: 5px;
+
+}
+#b1
+{
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    background-color: white;
+    top: 30%;
+    left: 9%;
+    background-image: url("https://www.vopmart.com/media/catalog/product/cache/ee14c5ab36c97d39d331f867fa3bee63/o/p/oppo_k12_plus.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.name1
+{
+    position: absolute;
+    top: 70%;
+    left: 9%;
+    background-color: white;
+    height: 65px;
+    width: 188px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 300;
+    font-family:serif;
+
+}
+#b2
+{
+     position: absolute;
+    height: 150px;
+    width: 20%;
+    background-color: white;
+    top: 30%;
+    left: 38%;
+    background-image: url("https://cdn.moglix.com/p/N3Gmszea4A9SI-xxlarge.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    border: 2px solid black;
+    
+}
+.name2
+{
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    background-color: white;
+    height: 65px;
+    width: 188px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 300;
+    font-family:serif;
+    
+}
+#b3
+{
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    background-color: white;
+    top: 30%;
+    left: 65%;
+    background-image: url("https://static0.pocketlintimages.com/wordpress/wp-content/uploads/157375-phones-news-vivo-v21-image3-hlkkb0frw1.jpg?w=1600&h=900&fit=crop");
+    background-size: cover;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.name3
+{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    background-color: white;
+    height: 65px;
+    width: 188px;
+    border-radius: 3px;
+    text-align:center;
+    font-size: medium;
+    font-weight: 300;
+    font-family:serif;
+    
+}
+.box1
+{
+    height: 400px;
+    width: 900px;
+    background-color: rgb(253, 252, 250);
+    position: absolute;
+    top: 120%;
+    left: 1%;
+    border-radius: 5%;
+    box-shadow: 1px 2px 5px 5px rgb(61, 61, 61);
+}
+
+h3
+{
+    left: 40%;
+    position: absolute;
+    margin: 10px;
+    font-family: cursive;
+    font-size: x-large;
+    font-weight:bolder;
+}
+.rec
+{
+    height: 195px;
+    width: 130px;
+    border: 2px solid black;
+    position: absolute;
+    top: 28%;
+    left: 28%;
+   background-color: rgb(247, 156, 129);
+    background-image: url("https://www.red.org/wp-content/uploads/2024/04/iPhone2.png");
+    background-size: cover;
+}
+#b4
+{
+    position: absolute;
+    height: 220px;
+    width: 38%;
+    background-color: white;
+    top: 25%;
+    left: 5%;
+    background-color:  rgb(148, 250, 134);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+h4{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-weight:900;
+    font-size:large;
+}
+h5{
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    font-size: x-large;
+    color: rgb(21, 105, 5);
+}
+button
+{
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 25px;
+}
+#b5
+{
+    position: absolute;
+    height: 220px;
+    width: 38%;
+    background-color: white;
+    top: 145%;
+    left: 50%;
+    background-color:  rgb(148, 250, 134);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.rec1
+{
+    height: 195px;
+    width: 130px;
+    border: 2px solid black;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    background-image: url("https://rukminim2.flixcart.com/image/480/640/kr3tj0w0/mobile/a/d/i/y72-5g-v2060-vivo-original-imag4yngqqjqvvht.jpeg?q=90");
+    background-size: cover;
+}
+h6
+{
+    position: absolute;
+     bottom: 35%;
+     left: 10%;
+     font-size: large;
+     font-weight:900;
+}
+.btn5
+{
+    position: absolute;
+    top: 60%;
+}
+#num
+{
+    position: absolute;
+    top: 115%;
+    right: 80%;
+    height: 28px;
+    width: 190px;
+    background-color: rgb(247, 248, 247);
+    text-align: center;
+    border: 4px solid rgb(33, 129, 4);
+    border-radius: 9%;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(26, 25, 25);
+}
+      </style>
+</head>
+<body>
+    <div class="container">
+  <div class="header"></div>
+   <div class="logo">NAGA MOBILES</div>
+
+    <div class="banner">
+    <h1>Best Deals on Smartphones</h1>
+    <p>Latest Mobile Phone at Best Price</p>
+    <div id="i1"></div>
+</div>
+<div class="btn1">Best Sellers</div>
+<div class="btn2">Accessories</div>
+<div class="btn3">New Arrivals</div>
+
+<div class="box">
+<h2 >popular phones</h2>
+<div class="square">
+<div id="b1"></div>
+<div class="name1"> Oppo k12 Plus<br>Super AMOLED Display<br>44,999</div>
+<div id="b2"></div>
+<div class="name2"> iPhone 13 Pro<br>128GB Storage<br>1,24,999</div>
+<div id="b3"></div>
+<div class="name3">Vivo V21<br>44MP Selife Camera <br>33,999</div>
+<div class="box1">
+    <h3>Special Offer</h3>
+    <div id="b4" ></div>
+    <div class="rec"></div>
+    <h4>iPhone 12 Mini<br>Discount  47,999</h4>
+    <h5>20% OFF</h5>
+    <button>limited Time Offer</button>
+</div>
+<div id="b5">
+    <div class="rec1"></div>
+    <h6>Vivo Y72 5G<br>Now Only  22,999</h6>
+    <button class="btn5">limited Time Offer</button>
+    <div id="num"> CONTACT- 8860445331</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
